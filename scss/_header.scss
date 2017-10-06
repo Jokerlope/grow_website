@@ -2,21 +2,29 @@
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #111;
-  padding: 20px 0;
-  height: 90px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 24px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   #logo {
-    float: left;
+    display: flex;
+    align-items: center;
+
     h1 {
       font-size: 36px;
-      margin: 0;
+      margin: 0 0 0 12px;
       padding: 6px 0;
       line-height: 1;
       font-family: $accent-font;
-      font-weight: 700;
+      font-weight: 100;
       letter-spacing: 3px;
       text-transform: uppercase;
+      color: white;
     }
 
     h1 a,
@@ -27,9 +35,10 @@
     img {
       padding: 0;
       margin: 0;
-      max-height: 50px;
+      max-height: 64px;
     }
   }
+
   @media (max-width: 768px) {
     height: 80px;
     #logo {
@@ -41,8 +50,5 @@
         max-height: 40px;
       }
     }
-  }
-  .is-sticky & {
-    background: rgba(0, 0, 0, 0.85);
   }
 }

@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
   });
 
   // RSS feed pull from medium.com
-  $("#rssFeed").rss("https://medium.com/feed/buzzcoin/", {
+  $("#rssFeed").rss("https://medium.com/feed/growcoin/", {
     limit: 5,
     tokens: {
       modifiedBody: function(entry, tokens) {
