@@ -57,8 +57,8 @@
     color: #fff;
 
     &:hover {
-      background: #ffdd55;
-      border: 2px solid #ffdd55;
+      background: $accent-color;
+      border: 2px solid $accent-color;
     }
   }
 }

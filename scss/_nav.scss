@@ -79,8 +79,8 @@
 
 /* Nav Meu Container */
 #nav-menu-container {
-  float: right;
   margin: 5px 0;
+
   @media (max-width: 768px) {
     display: none;
   }

@@ -136,7 +136,10 @@ h6 {
   #header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: flex-start; }
+    @media (min-width: 768px) {
+      #header .container {
+        justify-content: space-between; } }
   #header #logo {
     display: flex;
     align-items: center; }
@@ -222,7 +225,6 @@ h6 {
 
 /* Nav Meu Container */
 #nav-menu-container {
-  float: right;
   margin: 5px 0; }
   @media (max-width: 768px) {
     #nav-menu-container {
@@ -382,7 +384,7 @@ body.mobile-nav-active {
 
 #community .profile h4 {
   font-weight: 700;
-  color: #ffdd55;
+  color: #79b47c;
   margin-bottom: 5px; }
 
 #community .profile span {
@@ -457,11 +459,11 @@ body.mobile-nav-active {
 #downloads .service-icon,
 #about .service-icon {
   float: left;
-  background: #ffdd55;
+  background: #79b47c;
   padding: 16px;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #ffdd55; }
+  border: 1px solid #79b47c; }
 
 #downloads .service-icon i,
 #about .service-icon i {
@@ -474,7 +476,7 @@ body.mobile-nav-active {
 
 #downloads .service-item:hover .service-icon i,
 #about .service-item:hover .service-icon i {
-  color: #ffdd55; }
+  color: #79b47c; }
 
 #downloads .service-title,
 #about .service-title {
@@ -538,8 +540,8 @@ body.mobile-nav-active {
   border: 2px solid #fff;
   color: #fff; }
   .exchanges-btn:hover {
-    background: #ffdd55;
-    border: 2px solid #ffdd55; }
+    background: #79b47c;
+    border: 2px solid #79b47c; }
 
 #portfolio {
   background: #fff;
@@ -591,7 +593,7 @@ body.mobile-nav-active {
   height: 850px; }
 
 .progress-bar {
-  background-color: #ffdd55; }
+  background-color: #79b47c; }
 
 @media (min-width: 500px) {
   height: 720px; }
@@ -760,6 +762,10 @@ body.mobile-nav-active {
     margin-bottom: 12px; }
   .blog__item .actions {
     margin-bottom: 24px; }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto; }
 
 .section-title {
   font-size: 32px;

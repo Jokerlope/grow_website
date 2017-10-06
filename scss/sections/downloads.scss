@@ -18,11 +18,11 @@
 #downloads .service-icon,
 #about .service-icon {
   float: left;
-  background: #ffdd55;
+  background: $accent-color;
   padding: 16px;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #ffdd55;
+  border: 1px solid $accent-color;
 }
 
 #downloads .service-icon i,
@@ -38,7 +38,7 @@
 
 #downloads .service-item:hover .service-icon i,
 #about .service-item:hover .service-icon i {
-  color: #ffdd55;
+  color: $accent-color;
 }
 
 #downloads .service-title,
