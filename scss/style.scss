@@ -21,6 +21,17 @@
     border: 2px solid darken($accent-color, 25%);
     color: darken($accent-color, 25%);
   }
+
+  &.lite {
+    background: white;
+    border: 2px solid lighten($accent-color, 25%);
+    color: $accent-color;
+
+    &:hover {
+      background: darken(white, 10%);
+      color: darken($accent-color, 25%);
+    }
+  }
 }
 
 .actions {

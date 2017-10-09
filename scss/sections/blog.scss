@@ -2,6 +2,19 @@
   width: 100%;
 }
 
+#blog {
+  background: $accent-color;
+  padding: 64px 0;
+
+  .blog {
+    &-title {
+      text-transform: uppercase;
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
+
 .blog {
   &__item {
     margin: 24px 0;

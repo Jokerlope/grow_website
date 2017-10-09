@@ -4,7 +4,6 @@
 
 @import "./sections/about.scss";
 @import "./sections/community.scss";
-@import "./sections/contact.scss";
 @import "./sections/downloads.scss";
 @import "./sections/exchanges.scss";
 @import "./sections/portfolio.scss";
@@ -20,6 +19,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .container {

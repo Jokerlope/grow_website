@@ -1,11 +1,23 @@
 /* community Section
 --------------------------------*/
 #community {
-  background: #f6f6f6;
-  padding-top: 64px;
+  background: $accent-color;
+  padding: 64px 0;
 
   .container {
     max-width: 600px;
+  }
+
+  .section-title {
+    color: white;
+  }
+
+  .section-title-divider {
+    background: white;
+  }
+
+  .section-description {
+    color: white;
   }
 
   .row {

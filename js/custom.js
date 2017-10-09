@@ -142,6 +142,6 @@ jQuery(document).ready(function($) {
     },
     layoutTemplate: "<ul class='list-unstyled blog'>{entries}</ul>",
     entryTemplate:
-      '<li class="list-unstyled blog__item"><a href="{url}" target="_blank"><h4>{title}</h4></a><div class="row"><div class="col-md-4">{teaserImage}</div><div class="col-md-8"><p>{modifiedBody}</p><div class="actions"><a href="{url}" target="_blank" class="btn">Read More</a></div></div></li>'
+      '<li class="list-unstyled blog__item"><a href="{url}" target="_blank"><h4>{title}</h4></a><div class="row"><div class="col-md-4">{teaserImage}</div><div class="col-md-8"><p>{modifiedBody}</p><div class="actions"><a href="{url}" target="_blank" class="btn lite">Read More</a></div></div></li>'
   });
 });
