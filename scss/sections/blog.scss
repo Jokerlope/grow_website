@@ -6,6 +6,10 @@
   background: $accent-color;
   padding: 64px 0;
 
+  .section-title-divider {
+    background: white;
+  }
+
   .blog {
     &-title {
       text-transform: uppercase;

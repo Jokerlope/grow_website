@@ -370,16 +370,9 @@ body.mobile-nav-active {
 /* community Section
 --------------------------------*/
 #community {
-  background: #79b47c;
   padding: 64px 0; }
   #community .container {
     max-width: 600px; }
-  #community .section-title {
-    color: white; }
-  #community .section-title-divider {
-    background: white; }
-  #community .section-description {
-    color: white; }
   #community .row {
     display: flex;
     align-items: center;
@@ -540,30 +533,28 @@ body.mobile-nav-active {
 /* Roadmap Section
   --------------------------------*/
 #roadmap {
-  background: #f6f6f6;
+  background: #79b47c;
   padding: 64px 0; }
-
-.roadmap-title {
-  font-size: 32px; }
-
-#roadmap .container {
-  height: 750px; }
+  #roadmap .section-title,
+  #roadmap .section-description,
+  #roadmap h4,
+  #roadmap h5,
+  #roadmap ul li {
+    color: white; }
+  #roadmap .section-title-divider {
+    background: white; }
 
 .progress-bar {
-  background-color: #79b47c; }
+  background-color: #f6e06f; }
 
-@media (min-width: 500px) {
-  height: 720px; }
+.roadmap-item {
+  height: auto; }
 
 @media (max-width: 768px) {
   .roadmap-item .section-title {
     font-size: 24px; }
   .roadmap-item:not(:first-of-type) {
     margin: 48px 0; } }
-
-@media (min-width: 768px) {
-  #roadmap .container {
-    height: 650px; } }
 
 #services {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
@@ -701,6 +692,8 @@ body.mobile-nav-active {
 #blog {
   background: #79b47c;
   padding: 64px 0; }
+  #blog .section-title-divider {
+    background: white; }
   #blog .blog-title {
     text-transform: uppercase;
     color: white;

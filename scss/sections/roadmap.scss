@@ -1,24 +1,28 @@
 /* Roadmap Section
   --------------------------------*/
 #roadmap {
-  background: #f6f6f6;
+  background: $accent-color;
   padding: 64px 0;
-}
 
-.roadmap-title {
-  font-size: 32px;
-}
+  .section-title,
+  .section-description,
+  h4,
+  h5,
+  ul li {
+    color: white;
+  }
 
-#roadmap .container {
-  height: 750px;
+  .section-title-divider {
+    background: white;
+  }
 }
 
 .progress-bar {
-  background-color: $accent-color;
+  background-color: $gold;
 }
 
-@media (min-width: 500px) {
-  height: 720px;
+.roadmap-item {
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -29,11 +33,5 @@
     &:not(:first-of-type) {
       margin: 48px 0;
     }
-  }
-}
-
-@media (min-width: 768px) {
-  #roadmap .container {
-    height: 650px;
   }
 }
