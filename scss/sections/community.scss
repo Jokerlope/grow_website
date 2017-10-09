@@ -3,34 +3,25 @@
 #community {
   background: #f6f6f6;
   padding-top: 64px;
-}
 
-#community .container {
-  max-width: 600px;
-}
+  .container {
+    max-width: 600px;
+  }
 
-#community .profile .pic {
-  height: 128px;
-  width: 128px;
-  margin: 0 auto;
-}
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-#community .profile .pic img {
-  max-width: 100%;
-}
+  img {
+    height: 128px;
+    width: 128px;
+    margin: 0 24px;
 
-#community .profile h4 {
-  font-weight: 700;
-  color: $accent-color;
-  margin-bottom: 5px;
-}
-
-#community .profile span {
-  color: #333333;
-}
-
-@media (max-width: 768px) {
-  #community .profile .pic {
-    margin: 48px auto;
+    @media (max-width: 768px) {
+      height: 80px;
+      width: 80px;
+    }
   }
 }

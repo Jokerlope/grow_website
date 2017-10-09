@@ -1,10 +1,12 @@
 /* exchanges Section
   --------------------------------*/
+.exchanges {
+  background: url(../img/exchange.jpg) center center no-repeat;
+  background-size: cover;
+}
+
 #exchanges {
-  background: rgba(0, 0, 0, 0.85);
-  padding: 64px 0;
   text-align: center;
-  width: 100%;
 
   a {
     text-align: center;
@@ -16,13 +18,21 @@
     }
   }
 
+  .bg {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
   .container {
+    padding: 64px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     @media (max-width: 768px) {
       flex-direction: column;
     }
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
   }
 }
 

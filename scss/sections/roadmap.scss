@@ -5,8 +5,12 @@
   padding: 64px 0;
 }
 
+.roadmap-title {
+  font-size: 32px;
+}
+
 #roadmap .container {
-  height: 850px;
+  height: 650px;
 }
 
 .progress-bar {
@@ -29,11 +33,7 @@
 }
 
 @media (min-width: 768px) {
-  .roadmap-item {
-    min-width: 50%;
-  }
-
   #roadmap .container {
-    height: 400px;
+    height: 650px;
   }
 }

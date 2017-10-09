@@ -356,9 +356,6 @@ body.mobile-nav-active {
   margin-top: 64px; }
   #about .about-intro {
     margin-bottom: 48px; }
-  #about .about-container {
-    background: url(../img/about-img.jpg) left top no-repeat;
-    margin-top: 48px; }
   #about .about-content {
     background: #fff; }
   #about .about-title {
@@ -375,29 +372,20 @@ body.mobile-nav-active {
 #community {
   background: #f6f6f6;
   padding-top: 64px; }
-
-#community .container {
-  max-width: 600px; }
-
-#community .profile .pic {
-  height: 128px;
-  width: 128px;
-  margin: 0 auto; }
-
-#community .profile .pic img {
-  max-width: 100%; }
-
-#community .profile h4 {
-  font-weight: 700;
-  color: #79b47c;
-  margin-bottom: 5px; }
-
-#community .profile span {
-  color: #333333; }
-
-@media (max-width: 768px) {
-  #community .profile .pic {
-    margin: 48px auto; } }
+  #community .container {
+    max-width: 600px; }
+  #community .row {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #community img {
+    height: 128px;
+    width: 128px;
+    margin: 0 24px; }
+    @media (max-width: 768px) {
+      #community img {
+        height: 80px;
+        width: 80px; } }
 
 #contact {
   background: #f7f7f7;
@@ -501,20 +489,26 @@ body.mobile-nav-active {
 
 /* exchanges Section
   --------------------------------*/
+.exchanges {
+  background: url(../img/exchange.jpg) center center no-repeat;
+  background-size: cover; }
+
 #exchanges {
-  background: rgba(0, 0, 0, 0.85);
-  padding: 64px 0;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
   #exchanges a {
     text-align: center; }
   @media (max-width: 768px) {
     #exchanges img {
       margin: 12px 0; } }
+  #exchanges .bg {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; }
   #exchanges .container {
+    padding: 64px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: center; }
     @media (max-width: 768px) {
       #exchanges .container {
         flex-direction: column; } }
@@ -594,8 +588,11 @@ body.mobile-nav-active {
   background: #f6f6f6;
   padding: 64px 0; }
 
+.roadmap-title {
+  font-size: 32px; }
+
 #roadmap .container {
-  height: 850px; }
+  height: 650px; }
 
 .progress-bar {
   background-color: #79b47c; }
@@ -610,10 +607,8 @@ body.mobile-nav-active {
     margin: 48px 0; } }
 
 @media (min-width: 768px) {
-  .roadmap-item {
-    min-width: 50%; }
   #roadmap .container {
-    height: 400px; } }
+    height: 650px; } }
 
 #services {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
@@ -776,7 +771,8 @@ section {
 
 .container {
   max-width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 .section-title {
   font-size: 48px;
